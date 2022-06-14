@@ -16,7 +16,7 @@ export default function Header() {
         </div>
         <div className="flex items-center">
           <div className="hidden py-1 text-right xl:inline-block">
-            <Link href="/">
+            <Link href="/about">
               <a className="pr-12 text-lg text-black">
                 About me
               </a>
