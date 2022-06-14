@@ -16,7 +16,7 @@ export default function Main() {
               A Frontend and Blockchain developer
             </p>
             <div>
-              <a href="https://github.com/" target="_blank"></a>
+              <a href="https://github.com/" target="_blank" rel="noreferrer" ></a>
             </div>
           </div>
           <div className="mb-20 mt-0 hidden w-full flex-col lg:mt-0 lg:inline-block lg:w-3/6">
