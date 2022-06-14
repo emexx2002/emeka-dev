@@ -8,7 +8,7 @@ const Card = ({ image, title, link }) => {
                 <div className="h-1/2 w-full bg-contain bg-cover bg-no-repeat" style={{ backgroundImage: 'url(' + image + ')' }}></div>
                 <div className="h-1/2 w-full p-4">
                     <h3 className="text-lg font-bold mb-3">{title}</h3>
-                    <a href={link} target="_blank" className="rounded border-2 border-blue-400 text-black mt-3 px-8 py-2">View-project</a>
+                    <a href={link} target="_blank" rel="noreferrer" className="rounded border-2 border-blue-400 text-black mt-3 px-8 py-2">View-project</a>
                 </div>
             </div>
 
