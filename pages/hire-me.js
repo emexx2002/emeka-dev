@@ -12,6 +12,9 @@ export default function HireMe() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <Header />
+            <div className="w-full p-8">
+                <h1 className="text-center text-4xl md:text-6xl">Coming Soon</h1>
+            </div>
 
         </>
     );
