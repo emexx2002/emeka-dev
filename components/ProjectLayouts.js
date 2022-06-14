@@ -3,6 +3,19 @@
 import React, { useState } from 'react';
 import Card from './Card'
 
+
+const projects = [
+  { title: "Munche.service", image: "https://raw.githubusercontent.com/emexx2002/project-images/main/munche-preview.svg", link: "https://munche.services", category: "react" },
+  { title: "Loopy Studio", image: "https://raw.githubusercontent.com/emexx2002/project-images/main/loopy.png", link: "http://loopstudio-pi.vercel.app/", category: "htmlAndCss" },
+  { title: "Task Site", image: "https://raw.githubusercontent.com/emexx2002/project-images/main/task%20site.png", link: "https://task-site2.vercel.app/", category: "htmlAndCss" },
+  { title: "Super Cell landing page", image: "https://raw.githubusercontent.com/emexx2002/project-images/main/download.png", link: "https://supercell-meta.vercel.app/", category: "htmlAndCss" },
+  { title: "Open Sea clone", image: "https://raw.githubusercontent.com/emexx2002/project-images/main/opensea.png", link: "https://opensea-clone-emexx2002.vercel.app/", category: "blockchain, react" },
+  { title: "Loopy Studio", image: "https://raw.githubusercontent.com/emexx2002/project-images/main/shorter.png", link: "https://short-er.vercel.app/", category: "react" },
+  // { title: "Loopy Studio", image: "https://raw.githubusercontent.com/emexx2002/project-images/main/loopy.png", link: "http://loopstudio-pi.vercel.app/", category: "htmlAndCss" },
+  // { title: "Loopy Studio", image: "https://raw.githubusercontent.com/emexx2002/project-images/main/loopy.png", link: "http://loopstudio-pi.vercel.app/", category: "htmlAndCss" },
+
+]
+
 export default function Main() {
   const [active, setActive] = useState("all")
   return (
@@ -35,11 +48,10 @@ export default function Main() {
           </div>
           <div className="w-full">
             <div className="flex flex-wrap justify-center items-center px-8 py-12">
-              <Card />
-              <Card />
-              <Card />
-              <Card />
-              <Card />
+              {projects.map((project, index) =>
+                <Card key={index} image={project.image} link={project.link} title={project.title} />
+              )}
+
             </div>
           </div>
 
