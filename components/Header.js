@@ -10,10 +10,10 @@ export default function Header() {
   }
   return (
     <>
-      <div className="grotesk mt-0 mb-2 flex items-center justify-between py-4 px-4 sm:mx-0 sm:mb-20 sm:px-0 md:px-6">
-        <div className="mt-4 inline-block pb-4 pl-8">
+      <div className="grotesk mt-0 mb-2 flex items-center justify-between py-4 px-2 sm:mx-0 sm:mb-20 sm:px-0 md:px-6">
+        <div className="mt-4 inline-block pb-4 pl-4">
           <Link href="/">
-            <a href="/" className="align-middle text-3xl font-bold text-black">
+            <a href="/" className="align-middle text-2xl md:text-3xl font-bold text-black">
               {`{ EMEKA AGU }`}
             </a>
           </Link>
@@ -50,7 +50,7 @@ export default function Header() {
             </Link>
 
           </div>
-          <button onClick={toggleDrawer} className="pr-12 pl-4">
+          <button onClick={toggleDrawer} className="pr-5 pl-4">
             <svg
               className="mr-auto inline-block text-black xl:hidden"
               width="33"

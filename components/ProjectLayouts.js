@@ -31,7 +31,7 @@ export default function Main() {
 
   return (
     <div className="grotesk max-w-8xl mx-auto">
-      <section className="w-full text-black px-8">
+      <section className="w-full text-black px-2 md:px-8">
         <div className="max-w-8xl mx-auto inline-block items-center p-3 pt-0 lg:flex lg:flex-wrap lg:pt-0">
           <div className="lg:w-3/6">
             <h3 className="text-md lg:text-[2.0em] text-black">Take a look at my</h3>
@@ -51,14 +51,14 @@ export default function Main() {
           </div>
         </div>
         <div className="container py-8 m-auto">
-          <div className="flex justify-center items-center m-auto">
-            <button onClick={() => { handleFilter("all") }} className={`rounded border-2 mx-4 ${active === "all" ? "bg-blue-400 border-blue-400 text-white" : "border-blue-400 text-black"}  px-8 py-2`}>All</button>
-            <button onClick={() => { handleFilter("react") }} className={`rounded border-2 mx-4 ${active === "react" ? "bg-blue-400 border-blue-400 text-white" : "border-blue-400 text-black"}  px-8 py-2`}>React.js</button>
-            <button onClick={() => { handleFilter("blockchain") }} className={`rounded border-2 mx-4 ${active === "blockchain" ? "bg-blue-400 border-blue-400 text-white" : "border-blue-400 text-black"}  px-8 py-2`}>Blockchain</button>
-            <button onClick={() => { handleFilter("html") }} className={`rounded border-2 mx-4 ${active === "html" ? "bg-blue-400 border-blue-400 text-white" : "border-blue-400 text-black"}  px-8 py-2`}>HTML & CSS</button>
+          <div className="flex w-full justify-center items-center m-auto flex-wrap ">
+            <button onClick={() => { handleFilter("all") }} className={`rounded border-2 mx-4 ${active === "all" ? "bg-blue-400 border-blue-400 text-white" : "border-blue-400 text-black"}  px-8 py-2 my-3`}>All</button>
+            <button onClick={() => { handleFilter("react") }} className={`rounded border-2 mx-4 ${active === "react" ? "bg-blue-400 border-blue-400 text-white" : "border-blue-400 text-black"}  px-8 py-2 my-3`}>React.js</button>
+            <button onClick={() => { handleFilter("blockchain") }} className={`rounded border-2 mx-4 ${active === "blockchain" ? "bg-blue-400 border-blue-400 text-white" : "border-blue-400 text-black"}  px-8 py-2 my-3`}>Blockchain</button>
+            <button onClick={() => { handleFilter("html") }} className={`rounded border-2 mx-4 ${active === "html" ? "bg-blue-400 border-blue-400 text-white" : "border-blue-400 text-black"}  px-8 py-2 flex my-3`}>HTML & CSS</button>
           </div>
           <div className="w-full">
-            <div className="flex flex-wrap justify-center items-center px-8 py-12">
+            <div className="flex flex-wrap justify-center items-center px-2 py-4 md:px-8 py-12">
               {projects.filter(item => item.category.toLowerCase().includes(filter)).map((project, index) =>
                 <Card key={index} image={project.image} link={project.link} title={project.title} />
               )}
