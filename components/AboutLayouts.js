@@ -55,8 +55,10 @@ export default function Main() {
               </div>
               <div
                 className="
-                grid grid-cols-3
+                flex
                 gap-16
+                justify-center
+                flex-wrap
                 text-center
                 lg:grid-cols-3"
               >
