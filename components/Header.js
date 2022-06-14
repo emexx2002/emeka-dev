@@ -31,7 +31,7 @@ export default function Header() {
 
             <a
               className="mt-2 inline-flex items-center px-12 py-3 text-lg  tracking-tighter text-black"
-              href="/"
+              href="https://github.com/emexx2002/project-images/raw/main/Main%2BResume.pdf"
             >
               My resume
             </a>
