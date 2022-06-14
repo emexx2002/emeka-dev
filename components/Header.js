@@ -1,7 +1,13 @@
 /* eslint-disable @next/next/no-html-link-for-pages */
+import React from 'react';
 import Link from 'next/link'
+import Drawer from 'react-modern-drawer'
 
 export default function Header() {
+  const [isOpen, setIsOpen] = React.useState(false)
+  const toggleDrawer = () => {
+    setIsOpen((prevState) => !prevState)
+  }
   return (
     <>
       <div className="grotesk mt-0 mb-2 flex items-center justify-between py-4 px-4 sm:mx-0 sm:mb-20 sm:px-0 md:px-6">
@@ -42,7 +48,7 @@ export default function Header() {
               Hire Me
             </a>
           </div>
-          <button className="pr-12 pl-4">
+          <button onClick={toggleDrawer} className="pr-12 pl-4">
             <svg
               className="mr-auto inline-block text-black xl:hidden"
               width="33"
@@ -71,6 +77,38 @@ export default function Header() {
               />
             </svg>
           </button>
+          <Drawer
+            open={isOpen}
+            onClose={toggleDrawer}
+            direction='right'
+            className='xl:hidden bla bla bla'
+            size={300}
+          >
+            <div className="py-4 px-5 text-left block justify-center mt-12">
+              <Link href="/about">
+                <a className="block mt-5 text-lg text-black">
+                  About me
+                </a>
+              </Link>
+              <Link href="/projects">
+                <a className="block mt-5 text-lg text-black">
+                  Projects
+                </a>
+              </Link>
+              <a
+                className="text-lg mt-5 block text-black"
+                href="https://github.com/emexx2002/project-images/raw/main/Main%2BResume.pdf"
+              >
+                My resume
+              </a>
+              <a
+                className="bg-blue block mt-8 items-center px-8 py-3 text-lg font-semibold tracking-tighter text-white"
+                href="/"
+              >
+                Hire Me
+              </a>
+            </div>
+          </Drawer>
         </div>
       </div>
     </>

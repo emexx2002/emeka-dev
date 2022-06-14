@@ -18,6 +18,17 @@ const projects = [
 
 export default function Main() {
   const [active, setActive] = useState("all")
+  const [filter, setFilter] = useState("")
+
+  const handleFilter = (terms) => {
+
+    setFilter(terms == "all" ? "" : terms)
+    setActive(terms)
+
+
+
+  }
+
   return (
     <div className="grotesk max-w-8xl mx-auto">
       <section className="w-full text-black px-8">
@@ -41,14 +52,14 @@ export default function Main() {
         </div>
         <div className="container py-8 m-auto">
           <div className="flex justify-center items-center m-auto">
-            <button className={`rounded border-2 mx-4 ${active === "all" ? "bg-blue-400 border-blue-400 text-white" : "border-blue-400 text-black"}  px-8 py-2`}>All</button>
-            <button className="rounded border-2 mx-4 border-blue-400 text-black px-8 py-2">React.js</button>
-            <button className="rounded border-2 mx-4 border-blue-400 text-black px-8 py-2">Blockchain</button>
-            <button className="rounded border-2 mx-4 border-blue-400 text-black px-8 py-2">HTML & CSS</button>
+            <button onClick={() => { handleFilter("all") }} className={`rounded border-2 mx-4 ${active === "all" ? "bg-blue-400 border-blue-400 text-white" : "border-blue-400 text-black"}  px-8 py-2`}>All</button>
+            <button onClick={() => { handleFilter("react") }} className={`rounded border-2 mx-4 ${active === "react" ? "bg-blue-400 border-blue-400 text-white" : "border-blue-400 text-black"}  px-8 py-2`}>React.js</button>
+            <button onClick={() => { handleFilter("blockchain") }} className={`rounded border-2 mx-4 ${active === "blockchain" ? "bg-blue-400 border-blue-400 text-white" : "border-blue-400 text-black"}  px-8 py-2`}>Blockchain</button>
+            <button onClick={() => { handleFilter("html") }} className={`rounded border-2 mx-4 ${active === "html" ? "bg-blue-400 border-blue-400 text-white" : "border-blue-400 text-black"}  px-8 py-2`}>HTML & CSS</button>
           </div>
           <div className="w-full">
             <div className="flex flex-wrap justify-center items-center px-8 py-12">
-              {projects.map((project, index) =>
+              {projects.filter(item => item.category.toLowerCase().includes(filter)).map((project, index) =>
                 <Card key={index} image={project.image} link={project.link} title={project.title} />
               )}
 
