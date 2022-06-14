@@ -41,12 +41,14 @@ export default function Header() {
             >
               My resume
             </a>
-            <a
-              className="bg-blue mt-2 inline-flex items-center px-8 py-3 text-lg font-semibold tracking-tighter text-white"
-              href="/"
-            >
-              Hire Me
-            </a>
+            <Link href="/hire-me">
+              <a
+                className="bg-blue mt-2 inline-flex items-center px-8 py-3 text-lg font-semibold tracking-tighter text-white"
+              >
+                Hire Me
+              </a>
+            </Link>
+
           </div>
           <button onClick={toggleDrawer} className="pr-12 pl-4">
             <svg
@@ -101,12 +103,13 @@ export default function Header() {
               >
                 My resume
               </a>
-              <a
-                className="bg-blue block mt-8 items-center px-8 py-3 text-lg font-semibold tracking-tighter text-white"
-                href="/"
-              >
-                Hire Me
-              </a>
+              <Link href="/hire-me">
+                <a
+                  className="bg-blue block mt-8 items-center px-8 py-3 text-lg font-semibold tracking-tighter text-white" >
+                  Hire Me
+                </a>
+              </Link>
+
             </div>
           </Drawer>
         </div>
