@@ -7,7 +7,7 @@ export default function Main() {
       <section className="w-full text-black px-8">
         <div className="max-w-8xl mx-auto inline-block items-center p-3 pt-0 lg:flex lg:flex-wrap lg:pt-0">
           <div className="lg:w-3/6">
-            <h3 className="text-md lg:text-[2.0em] text-black">Welcome recruiter, I&apos;m</h3>
+            <h3 className="text-md lg:text-[2.0em] text-black">Welcome everyone, I&apos;m</h3>
             <h2 className="max-w-xl lg:text-[4.2em] text-3xl font-bold leading-none text-black inline-block">
               Agu Chukwuemeka
             </h2>
