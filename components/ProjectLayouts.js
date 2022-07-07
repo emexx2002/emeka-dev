@@ -11,7 +11,7 @@ const projects = [
   { title: "Super Cell landing page", image: "https://raw.githubusercontent.com/emexx2002/project-images/main/download.png", link: "https://supercell-meta.vercel.app/", category: "htmlAndCss" },
   { title: "Open Sea clone", image: "https://raw.githubusercontent.com/emexx2002/project-images/main/opensea.png", link: "https://opensea-clone-emexx2002.vercel.app/", category: "blockchain, react" },
   { title: "Loopy Studio", image: "https://raw.githubusercontent.com/emexx2002/project-images/main/shorter.png", link: "https://short-er.vercel.app/", category: "react" },
-  // { title: "Loopy Studio", image: "https://raw.githubusercontent.com/emexx2002/project-images/main/loopy.png", link: "http://loopstudio-pi.vercel.app/", category: "htmlAndCss" },
+  { title: "Wordle", image: "https://raw.githubusercontent.com/emexx2002/project-images/main/Screenshot%202022-07-07%20at%2015-05-01%20Screenshot.png", link: "https://wordle-emexx2002.vercel.app/", category: "react" },
   // { title: "Loopy Studio", image: "https://raw.githubusercontent.com/emexx2002/project-images/main/loopy.png", link: "http://loopstudio-pi.vercel.app/", category: "htmlAndCss" },
 
 ]
