@@ -5,13 +5,19 @@ import Card from './Card'
 
 
 const projects = [
-  { title: "Munche.service", image: "https://raw.githubusercontent.com/emexx2002/project-images/main/munche-preview.svg", link: "https://munche.services", category: "react" },
+  { title: "Munche.service", image: "https://raw.githubusercontent.com/emexx2002/project-images/main/munche-preview.svg", link: "https://munche-ow23weeqb-parallelinfiniti.vercel.app", category: "react" },
   { title: "Loopy Studio", image: "https://raw.githubusercontent.com/emexx2002/project-images/main/loopy.png", link: "http://loopstudio-pi.vercel.app/", category: "htmlAndCss" },
   { title: "Task Site", image: "https://raw.githubusercontent.com/emexx2002/project-images/main/task%20site.png", link: "https://task-site2.vercel.app/", category: "htmlAndCss" },
   { title: "Super Cell landing page", image: "https://raw.githubusercontent.com/emexx2002/project-images/main/download.png", link: "https://supercell-meta.vercel.app/", category: "htmlAndCss" },
   { title: "Open Sea clone", image: "https://raw.githubusercontent.com/emexx2002/project-images/main/opensea.png", link: "https://opensea-clone-emexx2002.vercel.app/", category: "blockchain, react" },
   { title: "Loopy Studio", image: "https://raw.githubusercontent.com/emexx2002/project-images/main/shorter.png", link: "https://short-er.vercel.app/", category: "react" },
   { title: "Wordle", image: "https://raw.githubusercontent.com/emexx2002/project-images/main/Screenshot%202022-07-07%20at%2015-05-01%20Screenshot.png", link: "https://wordle-emexx2002.vercel.app/", category: "react" },
+  { title: "Munche.services 2.0", image: "https://raw.githubusercontent.com/emexx2002/project-images/main/Screenshot%202022-09-24%20at%2021-20-34%20Munche.png", link: "https://munche.services/", category: "react" },
+  { title: "Bus booking admin dashboard", image: "https://raw.githubusercontent.com/emexx2002/project-images/main/Screenshot%202022-09-24%20at%2021-22-20%20Dashboard.png", link: "#private-app", category: "react" },
+  { title: "Infri Branch Admin dashboard", image: "https://raw.githubusercontent.com/emexx2002/project-images/main/Screenshot%202022-09-24%20at%2021-22-49%20User%20Infi%20Branch.png", link: "#private-app", category: "react" },
+
+
+
   // { title: "Loopy Studio", image: "https://raw.githubusercontent.com/emexx2002/project-images/main/loopy.png", link: "http://loopstudio-pi.vercel.app/", category: "htmlAndCss" },
 
 ]
