@@ -49,23 +49,8 @@ export default function HireMe() {
               Got a technical issue? Want to send feedback about a beta feature?
               Need help about a project? Let me know.
             </p>
-            <div className="space-y-8">
-              <div>
-                <label
-                  htmlFor="subject"
-                  className="mb-2 block text-sm font-medium text-gray-900"
-                >
-                  Name
-                </label>
-                <input
-                  type="text"
-                  id="subject"
-                  onChange={(e) => setName(e.target.value)}
-                  className="block w-full rounded-lg border border-gray-300 bg-gray-50 p-3 text-sm text-gray-900 shadow-sm focus:border-blue-500 focus:ring-blue-500"
-                  placeholder="John doe"
-                  required
-                />
-              </div>
+            <div className="space-y-6">
+        
               <div>
                 <label
                   htmlFor="email"
@@ -79,6 +64,22 @@ export default function HireMe() {
                   onChange={(e) => setEmail(e.target.value) }
                   className="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 shadow-sm focus:border-blue-500 focus:ring-blue-500"
                   placeholder="name@flowbite.com"
+                  required
+                />
+              </div>
+              <div>
+                <label
+                  htmlFor="subject"
+                  className="mb-2 block text-sm font-medium text-gray-900"
+                >
+                  Subject
+                </label>
+                <input
+                  type="text"
+                  id="subject"
+                  onChange={(e) => setName(e.target.value)}
+                  className="block w-full rounded-lg border border-gray-300 bg-gray-50 p-3 text-sm text-gray-900 shadow-sm focus:border-blue-500 focus:ring-blue-500"
+                  placeholder="John doe"
                   required
                 />
               </div>
@@ -98,13 +99,9 @@ export default function HireMe() {
                   placeholder="Leave a comment..."
                 ></textarea>
               </div>
-              <button
-                type="submit"
-                onClick={sendEmail}
-                className="rounded-lg bg-blue-700 py-3 px-5 text-center text-sm font-medium text-white hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 sm:w-fit"
-              >
-                Send message
-              </button>
+              <a className="rounded-lg block bg-blue-700 py-3 px-5 text-center text-sm font-medium text-white hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 sm:w-fit"
+               href={`mailto:aguchukwuemekag@gmail.com?subject=${name}&body=${message}`}>Send message</a>
+              
             </div>
           </div>
         </section>
