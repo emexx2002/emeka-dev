@@ -37,7 +37,7 @@ export default function Header() {
 
             <a
               className="mt-2 inline-flex items-center px-12 py-3 text-lg  tracking-tighter text-black"
-              href="https://github.com/emexx2002/project-images/blob/main/Main%2BResume.pdf"
+              href="https://raw.githubusercontent.com/emexx2002/project-images/main/Main%2BResume.pdf"
             >
               My resume
             </a>
@@ -99,7 +99,7 @@ export default function Header() {
               </Link>
               <a
                 className="text-lg mt-5 block text-black"
-                href="https://github.com/emexx2002/project-images/blob/main/Main%2BResume.pdf"
+                href="https://raw.githubusercontent.com/emexx2002/project-images/main/Main%2BResume.pdf"
               >
                 My resume
               </a>
