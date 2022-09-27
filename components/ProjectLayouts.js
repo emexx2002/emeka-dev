@@ -15,6 +15,7 @@ const projects = [
   { title: "Munche.services 2.0", image: "https://raw.githubusercontent.com/emexx2002/project-images/main/Screenshot%202022-09-24%20at%2021-20-34%20Munche.png", link: "https://munche.services/", category: "react" },
   { title: "Bus booking admin dashboard", image: "https://raw.githubusercontent.com/emexx2002/project-images/main/Screenshot%202022-09-24%20at%2021-22-20%20Dashboard.png", link: "#private-app", category: "react" },
   { title: "Infri Branch Admin dashboard", image: "https://raw.githubusercontent.com/emexx2002/project-images/main/Screenshot%202022-09-24%20at%2021-22-49%20User%20Infi%20Branch.png", link: "#private-app", category: "react" },
+  { title: "Tasky", image: "https://raw.githubusercontent.com/emexx2002/project-images/main/Screenshot%202022-09-27%20at%2014-20-12%20https%20__tasky-web-coral.vercel.app.png", link: "https://tasky-web-coral.vercel.app/", category: "react" },
 
 
 
